@@ -1,0 +1,34 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<form action="/Account/Register" method="post">
+    <div class="form-group">
+        <label for="usernameOrEmail">Username</label>
+        <input name="username" id="username"type="text" class="form-control" placeholder="enter username" required/> 
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input name="password" id="password" type="password" class="form-control" placeholder="enter password" required />
+    </div>
+
+    <div class="form-group">
+        <label for="confirmPassword">Confirm password</label>
+        <input name="confirmPassword" id="confirmPassword" type="password" class="form-control" placeholder="confirm password" required />
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input name="email" id="email" type="email" class="form-control" placeholder="enter email" required />
+    </div>
+
+    <div class="form-group ">
+        <button type="submit" class="btn btn-primary">Register</button>
+    </div>
+
+    <div class="form-group">
+        <a href="/Account/Login">Login</a>
+    </div>
+</form>
