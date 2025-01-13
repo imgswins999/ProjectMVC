@@ -1,0 +1,38 @@
+﻿@model IEnumerable<StationeryStore.Models.Products_tb>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="container">
+    <div class="row">
+        <div class="head-text">ALL PRODUCT</div>
+
+        @foreach(var product in Model)
+        
+        {
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img src="@product.img" class="card-img-top" alt="@product.productName" style="width:100px;object-fit:cover"/>
+                    <div class="card-body">
+                        <h2 class="card-            title">@product.productName</h2>
+                        <h3 class="card-text">@product.price</h3>
+                        <h4 class="card-text">
+                            <strong>Category ID</strong>@product.categoryID<br />
+                            <strong>Catagory Name</strong>@product.category.categoryName<br />
+                          <div class="card-footer">
+                              <small class="text-stock">Stock : @product.stock</small>
+                          </div>
+
+                        </h4>
+                    </div>
+
+                </div>
+
+            </div>
+        }
+
+    </div>
+
+</div>

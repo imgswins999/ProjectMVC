@@ -46,7 +46,7 @@ namespace StationeryStore.Controllers
             }
             else
             {
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("AllProduct", "Product");
             }
 
         }
