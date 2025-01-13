@@ -17,6 +17,7 @@ namespace StationeryStore.Controllers
         [HttpGet]
         public IActionResult Login()
         {
+            ViewData["HideNavbar"] = true;
             return View();
         }
         [HttpPost]
