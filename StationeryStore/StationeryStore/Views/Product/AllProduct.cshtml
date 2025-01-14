@@ -5,34 +5,138 @@
 @{
 }
 
-<div class="container">
-    <div class="row">
-        <div class="head-text">ALL PRODUCT</div>
+<style>
+    .container {
+        display: flex;
+        color: #FFFAEC;
+    }
+   
 
-        @foreach(var product in Model)
+    .sidebar {
+        width: 30%;
+        background-color: #578E7E;
+        padding: 20px 20px 20px 40px;
+        margin:20px 10px 20px 10px;
+        font-size:34px;
+        border-radius:20px;
+    }
+
+    .content {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .product {
+      
+        color: #fff;
+        padding: 15px;
+        border-radius: 5px;
+        width: calc(50% - 50px); /* 3 คอลัมน์ */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; 
+     
         
-        {
-            <div class="col-md-3 mb-4">
-                <div class="card h-100">
-                    <img src="@product.img" class="card-img-top" alt="@product.productName" style="width:100px;object-fit:cover"/>
-                    <div class="card-body">
-                        <h2 class="card-            title">@product.productName</h2>
-                        <h3 class="card-text">@product.price</h3>
-                        <h4 class="card-text">
-                            <strong>Category ID</strong>@product.categoryID<br />
-                            <strong>Catagory Name</strong>@product.category.categoryName<br />
-                          <div class="card-footer">
-                              <small class="text-stock">Stock : @product.stock</small>
-                          </div>
+    }
+    .card{
+        padding:20px;
+        background-color: #3D3D3D;
+        border-radius: 10px;
+    }
+    .card:hover{
+       background-color:#578E7E;
+    }
+   
+    .card-img-top {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
 
-                        </h4>
+    .text-stock {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #f00;
+    }
+
+   
+   .card-body
+    {
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px; 
+       
+    }
+    .card-body:hover{
+            background-color: #578E7E;
+    }
+
+    
+
+    .card-title,
+    .card-text,
+    .text-stock {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+    }
+
+    .card-title {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #FFFAEC;
+        
+    }
+
+    .card-text {
+        font-size: 1.4em;
+        color: #FFFAEC;
+    }
+
+    .text-stock {
+        font-size: 1.4em;
+        font-weight: bold;
+        color: #FFFAEC;
+    }
+
+    .background-container
+    {
+        background-color: rgba(255, 250, 236,0.9);
+        padding:20px;
+        border-radius:20px;
+    }
+</style>
+<div class="background-container">
+    <div class="container">
+        <div class="sidebar">
+            <h3 style="font-size:40px">หมวดหมู่สินค้า</h3>
+            <ul>
+                <li>เครื่องเขียนพื้นฐาน</li>
+                <li>สมุดและกระดาษ</li>
+                <li>อุปกรณ์การวาดและศิลปะ</li>
+           
+            </ul>
+        </div>
+        <div class="content">
+            @foreach (var product in Model)
+            {
+                <div class="product">
+                    <div class="card h-100">
+                        <img src="@product.img" class="card-img-top" alt="@product.productName" style="object-fit: cover; height: 150px; width: 100%;" />
+                        <div class="card-body">
+                            <h4 class="card-title">@product.productName</h4>
+                            <p class="card-text">ราคา: @product.price บาท</p>
+                            <p class="card-text">ประเภท: @product.category.categoryName</p>
+                            <p class="text-stock">เหลือ: @product.stock </p>
+                        </div>
                     </div>
-
                 </div>
-
-            </div>
-        }
-
+            }
+        </div>
     </div>
-
 </div>
