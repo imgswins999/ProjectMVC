@@ -27,6 +27,7 @@ namespace StationeryStore.Controllers
                 a.userEmail == usernameOrEmail) && a.userPassword == password);
             if (user == null || password == null)
             {
+                ViewData["HideNavbar"] = true;
                 return View();
             }
             var claims = new[]
@@ -53,6 +54,7 @@ namespace StationeryStore.Controllers
         [HttpGet]
         public IActionResult Register()
         {
+            ViewData["HideNavbar"] = true;
             return View();
         }
         [HttpPost]
@@ -60,12 +62,14 @@ namespace StationeryStore.Controllers
         {
             if (password != confirmPassword)
             {
+                ViewData["HideNavbar"] = true;
                 return View();
             }
            
 
             if (_context.User_tb.Any(a => a.userName == username || a.userEmail == email))
             {
+                ViewData["HideNavbar"] = true;
                 return View();
             }
             try
@@ -79,9 +83,11 @@ namespace StationeryStore.Controllers
                 };
                 _context.User_tb.Add(newUser);
                 _context.SaveChanges();
+                ViewData["HideNavbar"] = true;
                 return RedirectToAction("Login", "Account");
             }
-            catch (Exception ex) { 
+            catch (Exception ex) {
+                ViewData["HideNavbar"] = true;
                 return View();
             }
          

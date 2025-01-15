@@ -3,32 +3,49 @@
 *@
 @{
 }
-<form action="/Account/Register" method="post">
-    <div class="form-group">
-        <label for="usernameOrEmail">Username</label>
-        <input name="username" id="username"type="text" class="form-control" placeholder="enter username" required/> 
-    </div>
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card p-4 shadow-lg" style="width: 100%; max-width: 400px; border-radius: 12px;    background-color: #578E7E;">
+        <h2 class="text-center mb-4">Register</h2>
+        <form action="/Account/Register" method="post">
+            <div class="form-group mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input name="username" id="username" type="text" class="form-control" placeholder="Ex. xxxx123" required />
+            </div>
 
-    <div class="form-group">
-        <label for="password">Password</label>
-        <input name="password" id="password" type="password" class="form-control" placeholder="enter password" required />
-    </div>
+            <div class="form-group mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input name="password" id="password" type="password" class="form-control" placeholder="Ex. 123xxxxxza007" required />
+            </div>
 
-    <div class="form-group">
-        <label for="confirmPassword">Confirm password</label>
-        <input name="confirmPassword" id="confirmPassword" type="password" class="form-control" placeholder="confirm password" required />
-    </div>
+            <div class="form-group mb-3">
+                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                <input name="confirmPassword" id="confirmPassword" type="password" class="form-control" placeholder="Ex. 123xxxxxza007" required />
+            </div>
 
-    <div class="form-group">
-        <label for="email">Email</label>
-        <input name="email" id="email" type="email" class="form-control" placeholder="enter email" required />
-    </div>
+            <div class="form-group mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input name="email" id="email" type="email" class="form-control" placeholder="Ex. xxxxx@xxxx.com" required />
+            </div>
 
-    <div class="form-group ">
-        <button type="submit" class="btn btn-primary">Register</button>
-    </div>
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary btn-block w-100">Register</button>
+            </div>
 
-    <div class="form-group">
-        <a href="/Account/Login">Login</a>
+            <div class="form-group text-center mt-3 ">
+                <small>Already have an account? <a href="/Account/Login" class="text-decoration-none login-page">Login</a></small>
+            </div>
+        </form>
     </div>
-</form>
+</div>
+
+<style>
+    .login-page{
+        color: #3D3D3D;
+    }
+
+    .form-control:focus{
+        background-color: #FFFAEC;
+        border-color: #3D3D3D;
+    }
+
+</style>
