@@ -110,32 +110,70 @@
         padding:20px;
         border-radius:20px;
     }
+
+    ul.category-list {
+        list-style: inside; 
+        padding-left: 10px; 
+        text-align:right;
+   
+    }
+
+        ul.category-list li a {
+            text-decoration-line:none; 
+           
+        }
+
+            ul.category-list li a:hover {
+                text-decoration-line: underline;
+                text-decoration-color: #3D3D3D;
+                text-decoration-thickness: 3px; 
+            }
 </style>
+
+
 <div class="background-container">
     <div class="container">
         <div class="sidebar">
-            <h3 style="font-size:40px">หมวดหมู่สินค้า</h3>
-            <ul>
-                <li><a href=/Account/Login>เครื่องเขียนพื้นฐาน</a></li>
-                <li>สมุดและกระดาษ</li>
-                <li>อุปกรณ์การวาดและศิลปะ</li>
-           
+            <h3 style="font-size:40px;text-align:right;">หมวดหมู่สินค้า</h3>
+            <ul class="category-list">
+                <a href="/Product/AllProduct" style="text-decoration:none;color:#000" class="all-productetxt"> รวมสินค้า </a>
+                @foreach(var category in (IEnumerable<StationeryStore.Models.Categories_tb>)ViewBag.Categories)
+                {
+                    <li>
+                       
+                        <a href="/Product/AllProduct?categoryName=@category.categoryName"
+                           style="color: @(ViewBag.SelectedCategory ==                              category.categoryName ? "#FFFAEC" : "#000")">
+                            @category.categoryName
+                        </a>
+                    </li>
+                }
+
             </ul>
         </div>
         <div class="content">
-            @foreach (var product in Model)
+          
+          
+            @if (!Model.Any())
             {
-                <div class="product">
-                    <div class="card h-100">
-                        <img src="@product.img" class="card-img-top" alt="@product.productName" style="object-fit: cover; height: 150px; width: 100%;" />
-                        <div class="card-body">
-                            <h4 class="card-title">@product.productName</h4>
-                            <p class="card-text">ราคา: @product.price บาท</p>
-                            <p class="card-text">ประเภท: @product.category.categoryName</p>
-                            <p class="text-stock">เหลือ: @product.stock </p>
+                <p>ไม่มีสินค้าในหมวดหมู่นี้</p>
+            }
+             else
+            {
+                @foreach (var product in Model)
+                {
+                   
+                    <div class="product">
+                        <div class="card h-100">
+                            <img src="@product.img" class="card-img-top" alt="@product.productName" style="object-fit: cover; height: 150px; width: 100%;" />
+                            <div class="card-body">
+                                <h4 class="card-title">@product.productName</h4>
+                                <p class="card-text">ราคา: @product.price บาท</p>
+                                <p class="card-text">ประเภท: @product.category.categoryName</p>
+                                <p class="text-stock">เหลือ: @product.stock </p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                }
             }
         </div>
     </div>

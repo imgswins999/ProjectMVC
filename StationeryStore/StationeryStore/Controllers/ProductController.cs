@@ -15,13 +15,26 @@ namespace StationeryStore.Controllers
             _context = context;
         }
       
-        public IActionResult AllProduct()
+        public IActionResult AllProduct(string categoryName)
         {
-            IEnumerable<Products_tb> products = _context.Products_tb
-                .Include(a => a.category)
-                .ToList();
+            var productQuery = _context.Products_tb.Include(a => a.category).AsQueryable();
+
+            if (!string.IsNullOrEmpty(categoryName))
+            {
+                productQuery = productQuery.Where(a => a.category.categoryName == categoryName);
+            }
+
+
+            var products = productQuery.ToList();
+
+
+            ViewBag.Categories = _context.Categories_tb.ToList();
+            ViewBag.SelectedCategory = categoryName; 
+
+
             return View(products);
         }
-        
+
+      
     }
 }

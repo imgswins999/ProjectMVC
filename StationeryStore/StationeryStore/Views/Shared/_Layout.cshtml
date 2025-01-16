@@ -24,7 +24,7 @@
         {
             <nav class="navbar navbar-expand-sm navbar-toggleable-sm">
                 <div class="container-fluid">
-                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">StationeryStore</a>
+                    <a class="navbar-brand" asp-area="" asp-controller="#" asp-action="#">StationeryStore</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,16 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li> *@
+                        </li>
+                        *@
+                           @*  <li class="nav-item">
+                            <a class="nav-link " href="/Product/AllProduct" >Product</a>
+
+                            </li> *@
+                            <li class="nav-item" style="margin-left:auto;">
+                                <a class="nav-link logout" href="/Account/Login" style="color: #FFFAEC">Logout</a>
+                            </li>
+
                         </ul>
                     </div>
                 </div>
@@ -69,7 +78,7 @@
     body{
         font-family: "Athiti", serif;
         font-size:20px;
-        background-image: url("https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-image: url("https://images.pexels.com/photos/3183132/pexels-photo-3183132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
         background-attachment: fixed;
         background-repeat:no-repeat;
         background-size:cover;
@@ -111,4 +120,11 @@
             color: #AF8260;
     }
 
+    .logout{
+        font-size:30px;
+    }
+
+    .nav-link ,logout:hover {
+            color: #AF8260;
+    }
 </style>
