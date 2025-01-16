@@ -1,0 +1,55 @@
+﻿@model IEnumerable<StationeryStore.Models.Products_tb>
+@{
+    ViewData["Title"] = "Admin";
+}
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ชื่อสินค้า</th>
+            <th>ราคาสินค้า</th>
+            <th>จำนวนสินค้า</th>
+            <th>หมวดหมู่</th>
+            <th>รูปภาพสินค้า</th>
+            <th>จัดการ</th>
+        </tr>
+    </thead>
+    <tbody>
+        <div class="Contranier"
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.productName</td>
+                <td>@product.price</td>
+                <td>@product.stock</td>
+                <td>@product.category.categoryName</td> <!-- แสดงชื่อหมวดหมู่ -->
+                <td><img src="@product.img" alt="Cover Image" width="100" /></td> <!-- แสดงปกหนังสือ -->
+                <td>
+                    <!-- ลิงก์ไปยังหน้า Edit -->
+                    <a href="@Url.Action("Edit", "Admin", new { id = product.productID })" class="btn btn-primary">แก้ไข</a>
+
+                    <!-- ลิงก์ไปยังหน้า Delete -->
+                    <form asp-action="Delete" asp-controller="Admin" method="post" style="display:inline;">
+                        <input type="hidden" name="id" value="@product.productID" />
+                        <button type="submit" class="btn btn-danger" onclick="return confirm('คุณต้องการลบข้อมูลนี้หรือไม่?');">ลบ</button>
+                    </form>
+                </td>
+            </tr>
+        }
+        ></div>
+    </tbody>
+</table>
+<style>
+    body {
+        color: white;
+    }
+
+    .table {
+        color: white;
+    }
+
+    .table-striped > tbody > tr:nth-of-type(odd) {
+        color: white;
+    }
+</style>

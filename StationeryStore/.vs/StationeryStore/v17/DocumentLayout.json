@@ -1,29 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\nonla\\OneDrive\\\u0E40\u0E14\u0E2A\u0E01\u0E4C\u0E17\u0E47\u0E2D\u0E1B\\Project_MVC\\StationeryStore\\",
+  "WorkspaceRootPath": "D:\\ProjectAJ\\ProjectMVC\\StationeryStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7DBD27F7-966C-40CB-BAE4-439EA1CD7C8B}|StationeryStore\\StationeryStore.csproj|c:\\users\\nonla\\onedrive\\\u0E40\u0E14\u0E2A\u0E01\u0E4C\u0E17\u0E47\u0E2D\u0E1B\\project_mvc\\stationerystore\\stationerystore\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7DBD27F7-966C-40CB-BAE4-439EA1CD7C8B}|StationeryStore\\StationeryStore.csproj|d:\\projectaj\\projectmvc\\stationerystore\\stationerystore\\views\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7DBD27F7-966C-40CB-BAE4-439EA1CD7C8B}|StationeryStore\\StationeryStore.csproj|solutionrelative:stationerystore\\views\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DBD27F7-966C-40CB-BAE4-439EA1CD7C8B}|StationeryStore\\StationeryStore.csproj|d:\\projectaj\\projectmvc\\stationerystore\\stationerystore\\views\\admin\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7DBD27F7-966C-40CB-BAE4-439EA1CD7C8B}|StationeryStore\\StationeryStore.csproj|solutionrelative:stationerystore\\views\\admin\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DBD27F7-966C-40CB-BAE4-439EA1CD7C8B}|StationeryStore\\StationeryStore.csproj|d:\\projectaj\\projectmvc\\stationerystore\\stationerystore\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DBD27F7-966C-40CB-BAE4-439EA1CD7C8B}|StationeryStore\\StationeryStore.csproj|solutionrelative:stationerystore\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DBD27F7-966C-40CB-BAE4-439EA1CD7C8B}|StationeryStore\\StationeryStore.csproj|d:\\projectaj\\projectmvc\\stationerystore\\stationerystore\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7DBD27F7-966C-40CB-BAE4-439EA1CD7C8B}|StationeryStore\\StationeryStore.csproj|solutionrelative:stationerystore\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DBD27F7-966C-40CB-BAE4-439EA1CD7C8B}|StationeryStore\\StationeryStore.csproj|c:\\users\\nonla\\onedrive\\\u0E40\u0E14\u0E2A\u0E01\u0E4C\u0E17\u0E47\u0E2D\u0E1B\\project_mvc\\stationerystore\\stationerystore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7DBD27F7-966C-40CB-BAE4-439EA1CD7C8B}|StationeryStore\\StationeryStore.csproj|d:\\projectaj\\projectmvc\\stationerystore\\stationerystore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7DBD27F7-966C-40CB-BAE4-439EA1CD7C8B}|StationeryStore\\StationeryStore.csproj|solutionrelative:stationerystore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DBD27F7-966C-40CB-BAE4-439EA1CD7C8B}|StationeryStore\\StationeryStore.csproj|c:\\users\\nonla\\onedrive\\\u0E40\u0E14\u0E2A\u0E01\u0E4C\u0E17\u0E47\u0E2D\u0E1B\\project_mvc\\stationerystore\\stationerystore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7DBD27F7-966C-40CB-BAE4-439EA1CD7C8B}|StationeryStore\\StationeryStore.csproj|d:\\projectaj\\projectmvc\\stationerystore\\stationerystore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DBD27F7-966C-40CB-BAE4-439EA1CD7C8B}|StationeryStore\\StationeryStore.csproj|solutionrelative:stationerystore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DBD27F7-966C-40CB-BAE4-439EA1CD7C8B}|StationeryStore\\StationeryStore.csproj|c:\\users\\nonla\\onedrive\\\u0E40\u0E14\u0E2A\u0E01\u0E4C\u0E17\u0E47\u0E2D\u0E1B\\project_mvc\\stationerystore\\stationerystore\\views\\product\\allproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7DBD27F7-966C-40CB-BAE4-439EA1CD7C8B}|StationeryStore\\StationeryStore.csproj|d:\\projectaj\\projectmvc\\stationerystore\\stationerystore\\views\\product\\allproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7DBD27F7-966C-40CB-BAE4-439EA1CD7C8B}|StationeryStore\\StationeryStore.csproj|solutionrelative:stationerystore\\views\\product\\allproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DBD27F7-966C-40CB-BAE4-439EA1CD7C8B}|StationeryStore\\StationeryStore.csproj|c:\\users\\nonla\\onedrive\\\u0E40\u0E14\u0E2A\u0E01\u0E4C\u0E17\u0E47\u0E2D\u0E1B\\project_mvc\\stationerystore\\stationerystore\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7DBD27F7-966C-40CB-BAE4-439EA1CD7C8B}|StationeryStore\\StationeryStore.csproj|d:\\projectaj\\projectmvc\\stationerystore\\stationerystore\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DBD27F7-966C-40CB-BAE4-439EA1CD7C8B}|StationeryStore\\StationeryStore.csproj|solutionrelative:stationerystore\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DBD27F7-966C-40CB-BAE4-439EA1CD7C8B}|StationeryStore\\StationeryStore.csproj|c:\\users\\nonla\\onedrive\\\u0E40\u0E14\u0E2A\u0E01\u0E4C\u0E17\u0E47\u0E2D\u0E1B\\project_mvc\\stationerystore\\stationerystore\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7DBD27F7-966C-40CB-BAE4-439EA1CD7C8B}|StationeryStore\\StationeryStore.csproj|d:\\projectaj\\projectmvc\\stationerystore\\stationerystore\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DBD27F7-966C-40CB-BAE4-439EA1CD7C8B}|StationeryStore\\StationeryStore.csproj|solutionrelative:stationerystore\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,41 +46,91 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\nonla\\OneDrive\\\u0E40\u0E14\u0E2A\u0E01\u0E4C\u0E17\u0E47\u0E2D\u0E1B\\Project_MVC\\StationeryStore\\StationeryStore\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "StationeryStore\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\nonla\\OneDrive\\\u0E40\u0E14\u0E2A\u0E01\u0E4C\u0E17\u0E47\u0E2D\u0E1B\\Project_MVC\\StationeryStore\\StationeryStore\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "StationeryStore\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAFAAAACOAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\ProjectAJ\\ProjectMVC\\StationeryStore\\StationeryStore\\Views\\Admin\\Edit.cshtml",
+              "RelativeDocumentMoniker": "StationeryStore\\Views\\Admin\\Edit.cshtml",
+              "ToolTip": "D:\\ProjectAJ\\ProjectMVC\\StationeryStore\\StationeryStore\\Views\\Admin\\Edit.cshtml",
+              "RelativeToolTip": "StationeryStore\\Views\\Admin\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-14T09:29:09.411Z",
+              "WhenOpened": "2025-01-16T09:10:25.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Admin.cshtml",
+              "DocumentMoniker": "D:\\ProjectAJ\\ProjectMVC\\StationeryStore\\StationeryStore\\Views\\Admin\\Admin.cshtml",
+              "RelativeDocumentMoniker": "StationeryStore\\Views\\Admin\\Admin.cshtml",
+              "ToolTip": "D:\\ProjectAJ\\ProjectMVC\\StationeryStore\\StationeryStore\\Views\\Admin\\Admin.cshtml",
+              "RelativeToolTip": "StationeryStore\\Views\\Admin\\Admin.cshtml",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T09:09:12.955Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\nonla\\OneDrive\\\u0E40\u0E14\u0E2A\u0E01\u0E4C\u0E17\u0E47\u0E2D\u0E1B\\Project_MVC\\StationeryStore\\StationeryStore\\Program.cs",
-              "RelativeDocumentMoniker": "StationeryStore\\Program.cs",
-              "ToolTip": "C:\\Users\\nonla\\OneDrive\\\u0E40\u0E14\u0E2A\u0E01\u0E4C\u0E17\u0E47\u0E2D\u0E1B\\Project_MVC\\StationeryStore\\StationeryStore\\Program.cs",
-              "RelativeToolTip": "StationeryStore\\Program.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAcwDcAAAAAAAAAAAAAAA==",
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\ProjectAJ\\ProjectMVC\\StationeryStore\\StationeryStore\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "StationeryStore\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\ProjectAJ\\ProjectMVC\\StationeryStore\\StationeryStore\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "StationeryStore\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T12:03:04.596Z",
+              "WhenOpened": "2025-01-16T09:07:47.27Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\ProjectAJ\\ProjectMVC\\StationeryStore\\StationeryStore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "StationeryStore\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\ProjectAJ\\ProjectMVC\\StationeryStore\\StationeryStore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "StationeryStore\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAFAAAACOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-14T09:29:09.411Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ProjectAJ\\ProjectMVC\\StationeryStore\\StationeryStore\\Program.cs",
+              "RelativeDocumentMoniker": "StationeryStore\\Program.cs",
+              "ToolTip": "D:\\ProjectAJ\\ProjectMVC\\StationeryStore\\StationeryStore\\Program.cs",
+              "RelativeToolTip": "StationeryStore\\Program.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAcwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T12:03:04.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\ProjectAJ\\ProjectMVC\\StationeryStore\\StationeryStore\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "StationeryStore\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\ProjectAJ\\ProjectMVC\\StationeryStore\\StationeryStore\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "StationeryStore\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-14T09:28:58.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\nonla\\OneDrive\\\u0E40\u0E14\u0E2A\u0E01\u0E4C\u0E17\u0E47\u0E2D\u0E1B\\Project_MVC\\StationeryStore\\StationeryStore\\Controllers\\AccountController.cs",
+              "DocumentMoniker": "D:\\ProjectAJ\\ProjectMVC\\StationeryStore\\StationeryStore\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "StationeryStore\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\nonla\\OneDrive\\\u0E40\u0E14\u0E2A\u0E01\u0E4C\u0E17\u0E47\u0E2D\u0E1B\\Project_MVC\\StationeryStore\\StationeryStore\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\ProjectAJ\\ProjectMVC\\StationeryStore\\StationeryStore\\Controllers\\AccountController.cs",
               "RelativeToolTip": "StationeryStore\\Controllers\\AccountController.cs",
               "ViewState": "AgIAAFEAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -76,37 +138,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\nonla\\OneDrive\\\u0E40\u0E14\u0E2A\u0E01\u0E4C\u0E17\u0E47\u0E2D\u0E1B\\Project_MVC\\StationeryStore\\StationeryStore\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "StationeryStore\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\nonla\\OneDrive\\\u0E40\u0E14\u0E2A\u0E01\u0E4C\u0E17\u0E47\u0E2D\u0E1B\\Project_MVC\\StationeryStore\\StationeryStore\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "StationeryStore\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAACgAAAAAAAAAAAAAADMAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-14T09:28:58.647Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "AllProduct.cshtml",
-              "DocumentMoniker": "C:\\Users\\nonla\\OneDrive\\\u0E40\u0E14\u0E2A\u0E01\u0E4C\u0E17\u0E47\u0E2D\u0E1B\\Project_MVC\\StationeryStore\\StationeryStore\\Views\\Product\\AllProduct.cshtml",
+              "DocumentMoniker": "D:\\ProjectAJ\\ProjectMVC\\StationeryStore\\StationeryStore\\Views\\Product\\AllProduct.cshtml",
               "RelativeDocumentMoniker": "StationeryStore\\Views\\Product\\AllProduct.cshtml",
-              "ToolTip": "C:\\Users\\nonla\\OneDrive\\\u0E40\u0E14\u0E2A\u0E01\u0E4C\u0E17\u0E47\u0E2D\u0E1B\\Project_MVC\\StationeryStore\\StationeryStore\\Views\\Product\\AllProduct.cshtml",
+              "ToolTip": "D:\\ProjectAJ\\ProjectMVC\\StationeryStore\\StationeryStore\\Views\\Product\\AllProduct.cshtml",
               "RelativeToolTip": "StationeryStore\\Views\\Product\\AllProduct.cshtml",
               "ViewState": "AgIAAIkAAAAAAAAAAAAAAJEAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-14T09:00:46.668Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-14T09:00:46.668Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\nonla\\OneDrive\\\u0E40\u0E14\u0E2A\u0E01\u0E4C\u0E17\u0E47\u0E2D\u0E1B\\Project_MVC\\StationeryStore\\StationeryStore\\Controllers\\ProductController.cs",
+              "DocumentMoniker": "D:\\ProjectAJ\\ProjectMVC\\StationeryStore\\StationeryStore\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "StationeryStore\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\nonla\\OneDrive\\\u0E40\u0E14\u0E2A\u0E01\u0E4C\u0E17\u0E47\u0E2D\u0E1B\\Project_MVC\\StationeryStore\\StationeryStore\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\ProjectAJ\\ProjectMVC\\StationeryStore\\StationeryStore\\Controllers\\ProductController.cs",
               "RelativeToolTip": "StationeryStore\\Controllers\\ProductController.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
