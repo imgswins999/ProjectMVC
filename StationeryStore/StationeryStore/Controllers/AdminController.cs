@@ -62,5 +62,10 @@ namespace StationeryStore.Controllers
             return View(product);
         }
 
+        public IActionResult AddProduct()
+        {
+
+            return View();
+        }
     }
 }
