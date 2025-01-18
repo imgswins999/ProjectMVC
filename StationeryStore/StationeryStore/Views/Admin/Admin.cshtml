@@ -44,15 +44,86 @@
     </tbody>
 </table>
 <style>
-    body {
+    table {
+        background-color: rgba(245, 245, 220, 0.9);
+        border-collapse: separate;
+        border-spacing: 0;
+        width: 100%;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        border: 1px solid #d4d4d4;
+    }
+
+    /* Table headers */
+    th {
+        background-color: rgba(210, 180, 140, 0.9);
+        color: #333;
+        padding: 15px;
+        text-align: left;
+        font-weight: 600;
+        border-bottom: 2px solid #c4c4c4;
+        border-right: 1px solid #c4c4c4;
+    }
+
+        th:last-child {
+            border-right: none;
+        }
+
+    /* Table cells */
+    td {
+        padding: 12px 15px;
+        border-bottom: 1px solid #e0e0e0;
+        border-right: 1px solid #e0e0e0;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+
+        td:last-child {
+            border-right: none;
+        }
+
+    /* Remove bottom border for last row */
+    tr:last-child td {
+        border-bottom: none;
+    }
+
+    /* Hover effect on rows */
+    tr:hover td {
+        background-color: rgba(210, 180, 140, 0.2);
+        transition: background-color 0.3s ease;
+    }
+
+    /* Alternate row colors */
+    tr:nth-child(even) td {
+        background-color: rgba(245, 245, 220, 0.5);
+    }
+
+    /* Button styling */
+    .btn {
+        padding: 6px 12px;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        margin: 0 3px;
+        transition: all 0.3s ease;
+    }
+
+    .btn-edit {
+        background-color: #007bff;
         color: white;
     }
 
-    .table {
+        .btn-edit:hover {
+            background-color: #0056b3;
+        }
+
+    .btn-delete {
+        background-color: #dc3545;
         color: white;
     }
 
-    .table-striped > tbody > tr:nth-of-type(odd) {
-        color: white;
-    }
+        .btn-delete:hover {
+            background-color: #c82333;
+        }
 </style>
