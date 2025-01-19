@@ -6,8 +6,17 @@
 
 
 <div class="body-Login">
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert success" style="text-align:center;font:13px">
+            @TempData["SuccessMessage"]
+        </div>
+    }
     <div class="Login-text" style="text-align:center;font-size:40px;background-color:#578E7E;border-radius:20px;margin:0 0 30px 0">Login </div>
     <div class="bg1">
+
+      
+
     <form action="/Account/Login" method="post">
         <div class="form-group">
             <label for="userNameOrEmail">Username or Email </label>
@@ -21,9 +30,14 @@
             <input type="password" name="password" id="password" class="form-control"
                    placeholder="Enter password" required />
         </div>
+            @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+            {
+                <div style="color: red; margin:10px 0 0 0 ;font-size:16px">
+                    @ViewBag.ErrorMessage
+                </div>
+            }
 
-
-        <div class="form-group from-check">
+            <div class="form-group from-check " style="margin-bottom:20px;margin:10px">
 
 			<input type="checkbox" name="remember" id="remember" class="form-check-input" />
             
@@ -36,7 +50,7 @@
         </div>
 
         <div class="form-group">
-            <a href="/Account/Register" class="register-link">Register</a>
+            <a href="/Account/Register" class="register-link" style="font-size:15px">Register</a>
         </div>
         </form>
     </div>
@@ -47,7 +61,7 @@
     .body-Login{
         background: rgba(74, 73, 77, 0.9);
         padding:20px;
-        border-radius:10px;
+        border-radius:30px;
         width:500px;
         margin:200px auto auto auto;
      
@@ -61,6 +75,11 @@
     }
     body{
     
+    }
+
+    input[type="checkbox"] {
+        width: 15px; 
+        height: 15px; 
     }
     
 </style>

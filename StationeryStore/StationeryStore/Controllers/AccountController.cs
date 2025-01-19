@@ -28,6 +28,7 @@ namespace StationeryStore.Controllers
             if (user == null || password == null)
             {
                 ViewData["HideNavbar"] = true;
+                ViewBag.ErrorMessage = "Invalid username or password.";
                 return View();
             }
             var claims = new[]
@@ -62,6 +63,7 @@ namespace StationeryStore.Controllers
         {
             if (password != confirmPassword)
             {
+                ViewBag.ErrorMessage = "Password and confirm password do not match.";
                 ViewData["HideNavbar"] = true;
                 return View();
             }
@@ -69,6 +71,7 @@ namespace StationeryStore.Controllers
 
             if (_context.User_tb.Any(a => a.userName == username || a.userEmail == email))
             {
+                ViewBag.ErrorMessage = "This username or email is already taken. Please choose another.";
                 ViewData["HideNavbar"] = true;
                 return View();
             }
@@ -84,6 +87,7 @@ namespace StationeryStore.Controllers
                 _context.User_tb.Add(newUser);
                 _context.SaveChanges();
                 ViewData["HideNavbar"] = true;
+                TempData["SuccessMessage"] = "Successful ! Welcome to Stationary Store.";
                 return RedirectToAction("Login", "Account");
             }
             catch (Exception ex) {

@@ -5,7 +5,7 @@
 
 <div class="mt-3">
   
-    <a href="@Url.Action("AddProduct","Admin")"class="btn btn-primary">เพิ่มข้อมูลสินค้า</a>
+    <a href="@Url.Action("AddProduct","Admin")"class="btn btn-primary" style="margin:0 0 10px 0">เพิ่มข้อมูลสินค้า</a>
 
 </div>
 <table class="table table-striped">
@@ -31,7 +31,7 @@
                 <td><img src="@product.img" alt="Cover Image" width="100" /></td> <!-- แสดงปกหนังสือ -->
                 <td>
                     <!-- ลิงก์ไปยังหน้า Edit -->
-                    <a href="@Url.Action("Edit", "Admin", new { id = product.productID })" class="btn btn-primary">แก้ไข</a>
+                    <a href="@Url.Action("Edit", "Admin", new { id = product.productID })" class="btn btn-primary"style="margin:0 0 10px 0">แก้ไข</a>
 
                     <form asp-action="Delete" asp-controller="Admin" method="post" style="display:inline">
                         <input type="hidden" name="id" value="@product.productID" />

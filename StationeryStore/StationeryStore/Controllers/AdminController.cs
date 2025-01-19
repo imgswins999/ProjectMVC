@@ -40,32 +40,90 @@ namespace StationeryStore.Controllers
             _context.SaveChanges();
             return RedirectToAction("Admin", "Admin");
         }
-        // GET: Admin/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+
+        public ActionResult Edit(int id)
         {
-            if (id == null)
+            var categories = _context.Categories_tb.Select(c => new SelectListItem
             {
-                return NotFound();
-            }
+                Value = c.categoryID.ToString(),
+                Text = c.categoryName
+            }).ToList();
 
-            var product = await _context.Products_tb
-                .Include(p => p.category)
-                .FirstOrDefaultAsync(p => p.productID == id);
+            ViewBag.Categories = categories;
 
-            if (product == null)
-            {
-                return NotFound();
-            }
-
-            // Load categories for dropdown
-            ViewBag.Categories = new SelectList(_context.Categories_tb, "categoryID", "categoryName", product.categoryID);
+            var product = _context.Products_tb.Find(id);
             return View(product);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        // GET: Admin/Edit/5
+        public IActionResult Edit(int id, Products_tb product)
+        {
+
+            if (ModelState.IsValid)
+            {
+                return View(product);
+            }
+
+            var editProduct = _context.Products_tb.Find(id);
+            {
+
+
+                editProduct.productName = product.productName;
+                editProduct.price = product.price;
+                editProduct.stock = product.stock;
+                editProduct.img = product.img;
+                editProduct.categoryID = product.categoryID;
+                _context.Update(editProduct);
+                _context.SaveChanges();
+                return RedirectToAction("Admin");
+            }
         }
 
         public IActionResult AddProduct()
         {
+            var categories = _context.Categories_tb.Select(c => new SelectListItem
+            {
+                Value = c.categoryID.ToString(),
+                Text = c.categoryName
+            }).ToList();
 
+            ViewBag.Categories = categories;
             return View();
         }
+
+        [HttpPost]
+     
+        public IActionResult AddProduct(string productName ,decimal price,int stock,string img ,int categoryID)
+        {
+            if (_context.Products_tb.Any(a => a.productName == productName))
+            {
+                return View();
+            }
+
+            try
+            {
+                var newProduct = new Products_tb
+                {
+                    productName = productName,
+                    price = price,
+                    stock = stock,
+                    img = img,
+                    categoryID = categoryID
+                };
+
+                _context.Products_tb.Add(newProduct);
+                _context.SaveChanges();
+                return RedirectToAction("Admin");
+            }
+            catch (Exception ex)
+            {
+                return View();
+            }
+
+           
+        }
+       
     }
 }

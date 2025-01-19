@@ -1,12 +1,12 @@
-﻿
+﻿@model StationeryStore.Models.Products_tb
 @{
     ViewData["Title"] = "AddProduct";
 }
 
 <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
-    <div class="card p-4 shadow-lg" style="width: 100%; max-width: 400px; border-radius: 12px;    background-color: #578E7E;">
+    <div class="card p-4 shadow-lg" style="width: 100%; max-width: 600px; border-radius: 12px;    background-color: #578E7E;margin:0">
         <h2 class="text-center mb-4">Add Informations</h2>
-        <form action="/Account/Register" method="post">
+        <form action="/Admin/AddProduct" method="post">
             <div class="form-group mb-3">
                 <label for="productName" class="form-label">Productname</label>
                 <input name="productName" id="productName" type="text" class="form-control" placeholder="Name" required />
@@ -14,12 +14,12 @@
 
             <div class="form-group mb-3">
                 <label for="price" class="form-label">Price</label>
-                <input name="price" id="price" type="number" class="form-control" placeholder="Product Price" required />
+                <input name="price" id="price" type="number" min="0" class="form-control" placeholder="Product Price" required />
             </div>
 
             <div class="form-group mb-3">
                 <label for="stock" class="form-label">Stock</label>
-                <input name="stock" id="stock" type="number" class="form-control" placeholder="Stock Queslity" required />
+                <input name="stock" id="stock" type="number" min="0" class="form-control" placeholder="Stock Queslity" required />
             </div>
 
             <div class="form-group mb-3">
@@ -27,18 +27,44 @@
                 <input name="img" id="img" type="text" class="form-control" placeholder="Plese Url Img Address" required />
             </div>
 
-            <div class="form-group mb-3">
-                <label for="CategoryId" class="form-label">CategoryId</label>
-                <input name="CategoryId" id="CategoryId" type="number" class="form-control" placeholder="Plese Select CategoryId" required />
+            <!-- แสดงตัวอย่างภาพ -->
+            <div id="image-preview-container" style="margin-top: 15px; display: flex; justify-content: center; align-items: center; height: 200px; border: 1px solid #ccc;">
+                <img id="image-preview" src="" alt="Image Preview" style="max-width: 100%; max-height: 100%; display: none;" />
+            </div>
+
+
+            <div>
+                @Html.LabelFor(model => model.categoryID, "หมวดหมู่")
+                @Html.DropDownListFor(m => m.categoryID, new SelectList(ViewBag.Categories, "Value", "Text"),
+                         "กรุณาเลือก", new { @class = "form-control" })
+
+                @Html.ValidationMessageFor(model => model.categoryID, "", new { @class = "text-danger" })
             </div>
 
             <div class="form-group text-center">
-                <button type="submit" class="btn btn-primary btn-block w-100">Add</button>
+                <button type="submit" class="btn btn-primary btn-block w-100" style="margin:20px 0 0 0">Add</button>
             </div>
 
         </form>
     </div>
 </div>
+<script>
+    function previewImage() {
+        const imageInput = document.getElementById("img")
+        const imagePreview = document.getElementById("image-preview");
+
+        // ตรวจสอบว่าผู้ใช้ใส่ URL หรือไม่
+        if (imageInput.value.trim() !== "") {
+            imagePreview.src = imageInput.value; // อัปเดต src ของ <img>
+            imagePreview.style.display = "block"; // แสดง <img>
+        } else {
+            imagePreview.src = ""; // ลบค่าของ src
+            imagePreview.style.display = "none"; // ซ่อน <img>
+        }
+    }
+     document.getElementById("img").addEventListener("input", previewImage);
+</script>
+
 <style>
     .login-page {
         color: #3D3D3D;

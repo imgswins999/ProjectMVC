@@ -1,88 +1,91 @@
-﻿
-@model StationeryStore.Models.Products_tb
+﻿@model StationeryStore.Models.Products_tb
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewBag.Title = "Edit Product";
 }
 
-
-<h2>แก้ไขสินค้า</h2>
-
-<form action="Edit" method="post" enctype="multipart/form-data">
-    <input type="hidden" name="productID" value="@Model.productID" />
-
-    <div class="form-group">
-        <label for="productName">ชื่อสินค้า</label>
-        <input type="text" id="productName" name="productName" value="@Model.productName" class="form-control" />
-        <span class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label for="price">ราคาสินค้า</label>
-        <input type="number" id="price" name="price" value="@Model.price" class="form-control" />
-        <span class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label for="stock">จำนวนสินค้า</label>
-        <input type="number" id="stock" name="stock" value="@Model.stock" class="form-control" />
-        <span class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label for="categoryID">หมวดหมู่</label>
-        <select id="categoryID" name="categoryID" class="form-control">
-            <div class="Drop">
-                @foreach (var category in ViewBag.Categories)
-                {
-                    @if (category.Value == Model.categoryID.ToString())
+<div class="container" style="margin-top: 50px;">
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8 col-sm-10">
+            <div class="card shadow-lg border-0" style="border-radius: 15px;">
+                <div class="card-header text-center" style="background-color: #2D6A4F; color: white; border-radius: 15px 15px 0 0;">
+                    <h3>Edit Product</h3>
+                </div>
+                <div class="card-body p-4" style="background-color: #E9F7EF;">
+                    @using (Html.BeginForm("Edit", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
                     {
-                    <option value="@category.Value" selected>@category.Text</option>
+                        @Html.HiddenFor(model => model.productID)
+
+                        <!-- Product Name -->
+                        <div class="form-group mb-3">
+                            <label for="productName" class="form-label">Product Name</label>
+                            <input type="text" id="productName" name="productName" class="form-control"
+                                   placeholder="Enter Product Name" value="@Model.productName" required />
+                            <small class="text-danger">@Html.ValidationMessage("productName")</small>
+                        </div>
+
+                        <!-- Price -->
+                        <div class="form-group mb-3">
+                            <label for="price" class="form-label">Price</label>
+                            <input type="number" id="price" name="price" class="form-control"
+                                   placeholder="Enter Price" value="@Model.price" required />
+                            <small class="text-danger">@Html.ValidationMessage("price")</small>
+                        </div>
+
+                        <!-- Stock -->
+                        <div class="form-group mb-3">
+                            <label for="stock" class="form-label">Stock</label>
+                            <input type="number" id="stock" name="stock" class="form-control"
+                                   placeholder="Enter Stock Quantity" value="@Model.stock" required />
+                            <small class="text-danger">@Html.ValidationMessage("stock")</small>
+                        </div>
+
+                        <!-- Image URL -->
+                        <div class="form-group mb-3">
+                            <label for="img" class="form-label">Image URL</label>
+                            <input type="text" id="img" name="img" class="form-control"
+                                   placeholder="Enter Image URL" value="@Model.img" required />
+                            <small class="text-danger">@Html.ValidationMessage("img")</small>
+                        </div>
+
+                        <!-- Image Preview -->
+                        <div id="image-preview-container" style="margin-top: 15px; display: flex; justify-content: center; align-items: center; height: 200px; border: 1px solid #ccc;">
+                            <img id="image-preview" src="" alt="Image Preview" style="max-width: 100%; max-height: 100%; display: none;" />
+                        </div>
+
+                        <!-- Category -->
+                        <div class="form-group mb-4">
+                            @Html.LabelFor(model => model.categoryID, "Category")
+                            @Html.DropDownListFor(m => m.categoryID,
+                                     new SelectList(ViewBag.Categories, "Value", "Text"),
+                                     "Please Select",
+                                     new { @class = "form-control" })
+                            <small class="text-danger">@Html.ValidationMessageFor(model => model.categoryID)</small>
+                        </div>
+
+                        <!-- Update Button -->
+                        <div class="form-group text-center">
+                            <button type="submit" class="btn btn-success w-100">Update</button>
+                        </div>
                     }
-                    else
-                    {
-                    <option value="@category.Value">@category.Text</option>
-                    }
-                }
+                </div>
+            </div>
+        </div>
     </div>
-    </select>
-    </div>
+</div>
+<script>
+    function previewImage() {
+        const imageInput = document.getElementById("img")
+        const imagePreview = document.getElementById("image-preview");
 
-    <div class="form-group">
-        <label>ใส่ลิงค์ ImgAdress</label>
-        <input type="text" name="imgAdress" class="form-control" />
-        <label>รูปภาพปัจจุบัน</label>
-        @if (!string.IsNullOrEmpty(Model.img))
-        {
-            <img src="@Model.img" alt="Current Image" style="max-width: 200px;" />
+        // ตรวจสอบว่าผู้ใช้ใส่ URL หรือไม่
+        if (imageInput.value.trim() !== "") {
+            imagePreview.src = imageInput.value; // อัปเดต src ของ <img>
+            imagePreview.style.display = "block"; // แสดง <img>
+        } else {
+            imagePreview.src = ""; // ลบค่าของ src
+            imagePreview.style.display = "none"; // ซ่อน <img>
         }
-
-    </div>
-
-    <div class="mt-3">
-        <button type="submit" class="btn btn-primary">บันทึก</button>
-        <a href="@Url.Action("Admin")" class="btn btn-secondary">ยกเลิก</a>
-    </div>
-</form>
-
-<style>
-    body {
-        color: white;
     }
-
-    .form-control {
-        background-color: rgba(255, 255, 255, 0.1);
-        color: white;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
-        .form-control:focus {
-            background-color: rgba(255, 255, 255, 0.2);
-            color: white;
-        }
-
-    #categoryID option {
-        background-color: black;
-        color: white;
-    }
-</style>
+     document.getElementById("img").addEventListener("input", previewImage);
+</script>
