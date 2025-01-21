@@ -6,7 +6,15 @@
 <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
     <div class="card p-4 shadow-lg" style="width: 100%; max-width: 600px; border-radius: 12px;    background-color: #578E7E;margin:0">
         <h2 class="text-center mb-4">Add Informations</h2>
+
         <form action="/Admin/AddProduct" method="post">
+            @if (!string.IsNullOrEmpty(ViewBag.productAlrady))
+            {
+                <div style="color: #F39E60;">
+                    @ViewBag.productAlrady
+                </div>
+            }
+
             <div class="form-group mb-3">
                 <label for="productName" class="form-label">Productname</label>
                 <input name="productName" id="productName" type="text" class="form-control" placeholder="Name" required />

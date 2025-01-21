@@ -38,6 +38,7 @@ namespace StationeryStore.Controllers
             }
             _context.Products_tb.Remove(products);
             _context.SaveChanges();
+            TempData["deleteFinish"] = "Delete Sucess!";
             return RedirectToAction("Admin", "Admin");
         }
 
@@ -75,9 +76,11 @@ namespace StationeryStore.Controllers
                 editProduct.stock = product.stock;
                 editProduct.img = product.img;
                 editProduct.categoryID = product.categoryID;
+
                 _context.Update(editProduct);
                 _context.SaveChanges();
-                return RedirectToAction("Admin");
+                TempData["editFinish"] = "Edit Suceess!";
+                return RedirectToAction("Admin","Admin");
             }
         }
 
@@ -99,6 +102,8 @@ namespace StationeryStore.Controllers
         {
             if (_context.Products_tb.Any(a => a.productName == productName))
             {
+                ViewBag.productAlrady = "This username or email is already taken. Please choose another.";
+
                 return View();
             }
 
@@ -115,10 +120,12 @@ namespace StationeryStore.Controllers
 
                 _context.Products_tb.Add(newProduct);
                 _context.SaveChanges();
-                return RedirectToAction("Admin");
+                TempData["SuccessMessage"] = "Product added successfully!";
+                return RedirectToAction("Admin","Admin");
             }
             catch (Exception ex)
             {
+                ViewBag.errorMessage = "An error occurred while adding the product.";
                 return View();
             }
 

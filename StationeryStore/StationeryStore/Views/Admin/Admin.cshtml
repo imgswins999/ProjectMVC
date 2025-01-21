@@ -4,7 +4,27 @@
 }
 
 <div class="mt-3">
-  
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
+    @if(TempData["editFinish"]!=null){
+        <div class="alert alert-success">
+            @TempData["editFinish"]
+            </div>
+    }
+
+    @if (TempData["deleteFinish"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["deleteFinish"]
+        </div>
+    }
+
     <a href="@Url.Action("AddProduct","Admin")"class="btn btn-primary" style="margin:0 0 10px 0">เพิ่มข้อมูลสินค้า</a>
 
 </div>
