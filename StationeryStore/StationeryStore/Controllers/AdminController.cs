@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using AspNetCoreGeneratedDocument;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -93,13 +94,20 @@ namespace StationeryStore.Controllers
             }).ToList();
 
             ViewBag.Categories = categories;
-            return View();
+            return View(); // ส่งโมเดลที่ว่างเปล่า
         }
 
         [HttpPost]
      
         public IActionResult AddProduct(string productName ,decimal price,int stock,string img ,int categoryID)
         {
+            var categories = _context.Categories_tb.Select(c => new SelectListItem
+            {
+                Value = c.categoryID.ToString(),
+                Text = c.categoryName
+            }).ToList();
+            ViewBag.Categories = categories;
+
             if (_context.Products_tb.Any(a => a.productName == productName))
             {
                 ViewBag.productAlrady = "This username or email is already taken. Please choose another.";

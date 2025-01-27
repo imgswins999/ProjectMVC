@@ -79,9 +79,10 @@
     }
 
     .card-title{
-        background-color: #DDA853;
-        padding:10px;
-        border-radius:20px;
+        word-wrap: break-word; /* ตัดข้อความเมื่อข้อความยาวเกินกรอบ */
+        white-space: normal; /* ทำให้ข้อความแสดงผลหลายบรรทัด */
+        overflow-wrap: break-word; /* สำรองการตัดข้อความสำหรับเบราว์เซอร์ที่รองรับ */
+        text-overflow: ellipsis;
     }
 
     .card-title,
@@ -176,7 +177,7 @@
                         <div class="card h-100">
                             <img src="@product.img" class="card-img-top" alt="@product.productName" style="object-fit: cover; height: 150px; width: 100%;border-radius:10px;" />
                             <div class="card-body">
-                                <h4 class="card-title">@product.productName</h4>
+                                <h4 class="card-title" style="word-wrap:inherit">@product.productName</h4>
                                 <p class="card-text">ราคา: @product.price บาท</p>
                                 <p class="card-text">ประเภท: @product.category.categoryName</p>
                                 <p class="text-stock">เหลือ: @product.stock </p>

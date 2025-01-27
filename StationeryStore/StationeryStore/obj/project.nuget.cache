@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Al82xMJoQZg=",
+  "dgSpecHash": "JYpmjigLrxQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\nonla\\OneDrive\\เดสก์ท็อป\\New folder (2)\\ProjectMVC\\StationeryStore\\StationeryStore\\StationeryStore.csproj",
+  "projectFilePath": "C:\\Users\\nonla\\OneDrive\\เดสก์ท็อป\\New folder (3)\\ProjectMVC\\StationeryStore\\StationeryStore\\StationeryStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nonla\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\nonla\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

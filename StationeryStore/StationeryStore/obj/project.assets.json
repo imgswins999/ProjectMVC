@@ -7643,11 +7643,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nonla\\OneDrive\\เดสก์ท็อป\\New folder (2)\\ProjectMVC\\StationeryStore\\StationeryStore\\StationeryStore.csproj",
+      "projectUniqueName": "C:\\Users\\nonla\\OneDrive\\เดสก์ท็อป\\New folder (3)\\ProjectMVC\\StationeryStore\\StationeryStore\\StationeryStore.csproj",
       "projectName": "StationeryStore",
-      "projectPath": "C:\\Users\\nonla\\OneDrive\\เดสก์ท็อป\\New folder (2)\\ProjectMVC\\StationeryStore\\StationeryStore\\StationeryStore.csproj",
+      "projectPath": "C:\\Users\\nonla\\OneDrive\\เดสก์ท็อป\\New folder (3)\\ProjectMVC\\StationeryStore\\StationeryStore\\StationeryStore.csproj",
       "packagesPath": "C:\\Users\\nonla\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nonla\\OneDrive\\เดสก์ท็อป\\New folder (2)\\ProjectMVC\\StationeryStore\\StationeryStore\\obj\\",
+      "outputPath": "C:\\Users\\nonla\\OneDrive\\เดสก์ท็อป\\New folder (3)\\ProjectMVC\\StationeryStore\\StationeryStore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
