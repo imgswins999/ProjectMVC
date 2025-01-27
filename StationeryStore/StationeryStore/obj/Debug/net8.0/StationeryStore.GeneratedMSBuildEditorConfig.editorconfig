@@ -17,65 +17,65 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = StationeryStore
 build_property.RootNamespace = StationeryStore
-build_property.ProjectDir = C:\Users\nonla\OneDrive\เดสก์ท็อป\New folder (3)\ProjectMVC\StationeryStore\StationeryStore\
+build_property.ProjectDir = D:\ProjectMVC\StationeryStore\StationeryStore\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\nonla\OneDrive\เดสก์ท็อป\New folder (3)\ProjectMVC\StationeryStore\StationeryStore
+build_property.MSBuildProjectDirectory = D:\ProjectMVC\StationeryStore\StationeryStore
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/nonla/OneDrive/เดสก์ท็อป/New folder (3)/ProjectMVC/StationeryStore/StationeryStore/Views/Account/Login.cshtml]
+[D:/ProjectMVC/StationeryStore/StationeryStore/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nonla/OneDrive/เดสก์ท็อป/New folder (3)/ProjectMVC/StationeryStore/StationeryStore/Views/Account/Register.cshtml]
+[D:/ProjectMVC/StationeryStore/StationeryStore/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nonla/OneDrive/เดสก์ท็อป/New folder (3)/ProjectMVC/StationeryStore/StationeryStore/Views/Admin/AddProduct.cshtml]
+[D:/ProjectMVC/StationeryStore/StationeryStore/Views/Admin/AddProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkUHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nonla/OneDrive/เดสก์ท็อป/New folder (3)/ProjectMVC/StationeryStore/StationeryStore/Views/Admin/Admin.cshtml]
+[D:/ProjectMVC/StationeryStore/StationeryStore/Views/Admin/Admin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nonla/OneDrive/เดสก์ท็อป/New folder (3)/ProjectMVC/StationeryStore/StationeryStore/Views/Admin/Edit.cshtml]
+[D:/ProjectMVC/StationeryStore/StationeryStore/Views/Admin/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nonla/OneDrive/เดสก์ท็อป/New folder (3)/ProjectMVC/StationeryStore/StationeryStore/Views/Home/Index.cshtml]
+[D:/ProjectMVC/StationeryStore/StationeryStore/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nonla/OneDrive/เดสก์ท็อป/New folder (3)/ProjectMVC/StationeryStore/StationeryStore/Views/Home/Privacy.cshtml]
+[D:/ProjectMVC/StationeryStore/StationeryStore/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nonla/OneDrive/เดสก์ท็อป/New folder (3)/ProjectMVC/StationeryStore/StationeryStore/Views/Product/AllProduct.cshtml]
+[D:/ProjectMVC/StationeryStore/StationeryStore/Views/Product/AllProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxBbGxQcm9kdWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nonla/OneDrive/เดสก์ท็อป/New folder (3)/ProjectMVC/StationeryStore/StationeryStore/Views/Shared/Error.cshtml]
+[D:/ProjectMVC/StationeryStore/StationeryStore/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nonla/OneDrive/เดสก์ท็อป/New folder (3)/ProjectMVC/StationeryStore/StationeryStore/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/ProjectMVC/StationeryStore/StationeryStore/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nonla/OneDrive/เดสก์ท็อป/New folder (3)/ProjectMVC/StationeryStore/StationeryStore/Views/_ViewImports.cshtml]
+[D:/ProjectMVC/StationeryStore/StationeryStore/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nonla/OneDrive/เดสก์ท็อป/New folder (3)/ProjectMVC/StationeryStore/StationeryStore/Views/_ViewStart.cshtml]
+[D:/ProjectMVC/StationeryStore/StationeryStore/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nonla/OneDrive/เดสก์ท็อป/New folder (3)/ProjectMVC/StationeryStore/StationeryStore/Views/Shared/_Layout.cshtml]
+[D:/ProjectMVC/StationeryStore/StationeryStore/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-kklr7kw6qo

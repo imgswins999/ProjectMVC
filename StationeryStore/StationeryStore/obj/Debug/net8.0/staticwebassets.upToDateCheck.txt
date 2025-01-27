@@ -1,5 +1,10 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\image\addedit.jpg
+wwwroot\image\bgadmin.jpg
+wwwroot\image\edit.jpg
+wwwroot\image\login.jpg
+wwwroot\image\register.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
